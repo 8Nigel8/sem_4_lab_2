@@ -48,6 +48,14 @@ function initListEvents () {
   }, false)
 }
 
+function initAddForm () {
+  const form = window.document.querySelector('#customer-list')
+  form.addEventListener('delete', function (e) {
+    e.preventDefault()
+    e.target.reset()
+  })
+}
+
 window.addEventListener('DOMContentLoaded', e => {
   initAddForm()
   initList()

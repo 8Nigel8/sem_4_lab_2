@@ -19,9 +19,9 @@ block content
         input(id='budget' name='budget' value='' class='form-control')        
     div(class='form-group')
       div(class='col-md-12')
-        button(type='submit' class='btn btn-primary') Create
-    div.list-wrapper
-      table(id='customer-list')
+        button(type='submit' class='btn btn-primary' id = 'create-btn') Create
+  div.list-wrapper
+    table(id='customer-list')
 block append scripts
   script(src='/static/js/models/customer.js')
   script(src='//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js')
